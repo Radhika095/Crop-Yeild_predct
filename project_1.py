@@ -6,13 +6,13 @@ import joblib as jb
 st.title("Welcome To Sustainable Crop Yield Prediction...!")
 
 # Load the trained model
-model_path = r"C:\Users\hp\Desktop\PytonProject\crop_yield_prediction_Output_Cal.pkl"
+model_path = (r"C:\Users\Acer\OneDrive\Desktop\pyhton project\crop_yield_prediction_Output_Cal.pkl")
 crop_yield_model = jb.load(model_path)
 
 # User inputs
 exp_1 = st.number_input("Enter the Year:")
-exp_2 = st.number_input("Enter the average rainfall in mm per year:", min_value=0.0, max_value=1500.0)
-exp_3 = st.number_input("Enter the pesticides in tonnes:", min_value=0.0, max_value=3000.0)
+exp_2 = st.number_input("Enter the average rainfall in mm per year:")
+exp_3 = st.number_input("Enter the pesticides in tonnes:")
 exp_4 = st.number_input("Enter the average temperature (°C):", min_value=0.0, max_value=25.0)
 
 # Predict button
